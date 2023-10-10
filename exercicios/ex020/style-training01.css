@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+  background-color: #462255;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#tituloprincipal {
+  text-align: center;
+  color: #462255;
+  background-color: #dc143c;
+}
+
+.seteminutoz::before {
+  content: "🈳";
+}
+
+.seteminutoz::after {
+  content: "🈂️";
+}
+
+.mhrap::before {
+  content: "🈴";
+}
+
+.mhrap::after {
+  content: "🈹";
+}
+
+h1 {
+  color: #dc143c;
+}
+
+a {
+  text-decoration: none;
+  color: #ebb3a9;
+}
+
+a:hover {
+  color: gold;
+  background-color: black;
+}
+
+a:active {
+  color: azure;
+  background-color: #dc143c;
+}
+
+ul {
+  list-style-type: none;
+}

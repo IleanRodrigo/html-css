@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídias em HTML5</title>
+  </head>
+  <body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+      Tente abrir esse site em vários dispositivos diiferentes ou simplesmente
+      aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+      <source
+        media="(max-width: 750px)"
+        srcset="imagens/foto-p.jpg"
+        type="image/jpg"
+      />
+      <source
+        media="(max-width: 1050px)"
+        srcset="imagens/foto-m.jpg"
+        type="image/jpg"
+      />
+      <img src="imagens/foto-g.jpg" alt="Imagem Flexível" />
+    </picture>
+
+    <p>
+      <strong>Nota:</strong>Se você não se preocupar com o tamanho da imagem e
+      com rolagem lateral (que é algo que icomoda muito os usuários), as pessoas
+      irão embora do seu site. E se isso acontecer com frequência (o que vai
+      acontecer se o seu site não estiver dinâmico) uma taxa que o Google chama
+      de bounce rate (taxa de rejeição) irá aumentar drasticamente, e isso pra
+      um site é algo ruim. Altos bounce rate indicam uma péssima qualidade de
+      site. Sites assim perdem as indicações do Google tornando-os menos
+      acessíveis. Sempre se preocupe com o usuário, o usuário em primeiro lugar.
+    </p>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>
+      Vamos aprender a reproduzir áudios em HTML5. Evite o arquivo WAV, são os
+      mais pesados. Esquece qualidade top quando se falar se imagem de audio e
+      de video. Qualidade alta é para download.
+    </p>
+    <audio src="midia/zodiaco.mp3" controls autoplay></audio>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.moro:focus {
+  color: mediumturquoise;
+}
+
+.freeza:focus {
+  color: purple;
+}
+
+.cell:focus {
+  color: green;
+}
+
+.jiren:focus {
+  color: red;
+}

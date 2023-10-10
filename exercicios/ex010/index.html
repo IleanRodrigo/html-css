@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com links</title>
+  </head>
+  <body>
+    <h1>Usando links externos</h1>
+    <dl>
+      <dt><strong>Link Externo</strong></dt>
+      <dd>É um link que aponta pra outro site que não é nosso.</dd>
+      <dl>
+        <dt><strong>Tag &lt;a&gt;</strong></dt>
+        <dd>É a tag <em>anchor ou âncora</em>, capaz de criar um hyperlink.</dd>
+        <dt><strong>Parâmetro href</strong></dt>
+        <dd>O <em>parâmetro de referência a hypertexto</em> (hypertext reference) é praticamente obrigatório e é nele que colocamos a URL do destino que desejamos.</dd>
+        <dt><strong>Parâmetro target</strong></dt>
+        <dd>O parâmetro target (alvo) é capaz de especificar de que forma será aberto o hyperlink em questão. Por padrão, o valor presente no parâmetro é <em>_self</em> (mesmo ou próprio) que abre o link na mesma aba. Para que a abertura seja feita em uma outra aba, usamos o valor <em>_blank</em> (em branco. No caso, janela em branco).</dd>
+        <strong>
+          <dt>Parâmetro rel</dt>
+        </strong>
+        <dd>Esse parâmetro indicar qual a "natureza" do destino, e possui valores como: <ul><li>Next (próxima parte do documento atual)</li> <li>Prev (parte anterior do documento atual)</li> <li>Author (site do author do artigo atual)</li> <li>External (para outro site que não faz parte do site atual)</li> <li>Nofollow (para um site não endossado. Quando você faz um link pra matéria de um site que você não sabe se é o oficial. Ou então sempre que você fizer um link patrocinado de uma empresa que pagou pra estar ali. Basicamente você que não dá aval para o conteúdo e diz para o Google "não seguir" Nofollow)</li> </ul>
+        A importância desse parâmetro está em facilitar o mecânismo de busca a encontrar o sistema de navegação que você tá criando pro seu site. Você diz para o Google quais são as próximas páginas e as anteriores.</dd>
+      </dl>
+      <h2>Exemplo:</h2>
+      <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/">repositório público no GitHub</a></p>
+      <p>Acesse também o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external" >canal gratuito no YouTube</a></p>
+      <h1>Usando links internos</h1>
+      <dl><strong>
+        <dt>Link Interno</dt>
+      </strong> <dd>É um link que faz uma relação com outra página que está dentro do nosso servidor e diz respeito a nossa própria página.</dd> </dl>
+      <h2>Exemplo:</h2>
+      <p>Muito importante! Veja <a href="pag002.html" rel="next">esta mensagem.</a></p>
+      <p>Acesse também a nossa <a href="noticias/pag003.html" rel="next">página de notícias</a></p>
+
+      <h1>Links para Download</h1>
+      <ul>
+        <li><a href="livros e musicas/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar PDF da aula 10</a></li> 
+        <li><a href="livros e musicas/Mistery - Sob Meu Controle(720p).mp4" download="Mistery - Sob Meu Controle(720p).mp4" type="video/mp4">Baixar "Sob meu Controle"</a></li>
+        <li><a href="livros e musicas/Formato de brief de diseño.zip" download="Formato de brief de diseño.zip" type="application/zip">Baixar Arquivo Zip</a></li>
+      </ul>
+  </body>
+</html>
